@@ -1,4 +1,6 @@
 // src/data/stories.ts
+import kikoRain from "../assets/kiko-rain.jpg"
+
 export type StoryType = {
   id: string;
   title: string;
@@ -14,7 +16,6 @@ const rawStories: StoryType[] = [
   title: "Milo: The Fetch Legend of DTLB",
   date: "Feb 12, 2025",
   preview: "Milo’s endless fetch energy inspires everyone at the park.",
-  image: "/src/assets/milo-fetch.jpg",
   content: `
     Milo is known for one thing: fetch at lightning speed.
     Every meetup, he brings his neon tennis ball and rallies every dog around.
@@ -27,7 +28,7 @@ const rawStories: StoryType[] = [
   title: "Kiko: Rain or Shine",
   date: "Jan 7, 2025",
   preview: "Kiko shows up—even in the rain—to see his friends.",
-  image: "/src/assets/kiko-rain.JPG",
+  image: kikoRain,
   content: `
     Kiko never misses a meetup. Even during light rain, he stands proudly 
     in his little raincoat, wagging at everyone who walks by.
@@ -39,7 +40,6 @@ const rawStories: StoryType[] = [
   title: "Hazel Finds Her New Best Friend",
   date: "Aug 19, 2024",
   preview: "Hazel used to avoid big dogs—until she met Rocky.",
-  image: "/src/assets/hazel-rocky.jpg",
   content: `
     For months, Hazel stayed close to her human, too nervous to explore.
     Then she met Rocky, a gentle giant who showed her the joy of play.
@@ -52,7 +52,6 @@ const rawStories: StoryType[] = [
   title: "Rocky, the Gentle Guardian",
   date: "May 14, 2025",
   preview: "Rocky watches over the little pups like a big brother.",
-  image: "/src/assets/rocky-guardian.jpg",
   content: `
     Rocky is loved for his gentle nature. New or anxious dogs often gravitate to him.
     He walks around the group with calm energy, encouraging play while keeping peace.
@@ -64,7 +63,6 @@ const rawStories: StoryType[] = [
   title: "Lola’s Happy Strut Through DTLB",
   date: "Mar 2, 2024",
   preview: "Lola’s wiggle walk brightens every morning.",
-  image: "/src/assets/lola-strut.jpg",
   content: `
     Lola loves trotting through Downtown Long Beach with her signature wiggle.
     But without a real off-leash park, she rarely gets the chance to run freely.
@@ -76,7 +74,6 @@ const rawStories: StoryType[] = [
   title: "Duke’s Rescue Journey",
   date: "Sep 30, 2025",
   preview: "Duke came from a tough past, but the community helped him heal.",
-  image: "/src/assets/duke-rescue.jpg",
   content: `
     When Duke was adopted, he was scared of everything—sounds, people, even grass.
     With slow introductions at Cesar Chavez meetups, he blossomed into a confident, loving dog.
@@ -88,7 +85,6 @@ const rawStories: StoryType[] = [
   title: "Bella the Water Lover",
   date: "Jul 9, 2023",
   preview: "Bella splashes in every puddle she can find.",
-  image: "/src/assets/bella-water.jpg",
   content: `
     Bella lights up around water—puddles, sprinklers, anything.
     But without proper park amenities in DTLB, her love for water play is limited.
@@ -100,7 +96,6 @@ const rawStories: StoryType[] = [
   title: "Charlie’s Senior Smiles",
   date: "Oct 11, 2024",
   preview: "Charlie may be older, but the dog community keeps him young.",
-  image: "/src/assets/charlie-senior.jpg",
   content: `
     At 12 years old, Charlie enjoys slower walks and soft pats,
     but he still loves being around the younger pups.
@@ -113,7 +108,6 @@ const rawStories: StoryType[] = [
   title: "Penny’s Playful Leaps",
   date: "Jun 5, 2025",
   preview: "Penny has hops—and no space to use them.",
-  image: "/src/assets/penny-leaps.jpg",
   content: `
     Penny is famous for her bouncy jumps when she gets excited.
     Without a real dog park, her leaps are limited to tight spaces.
@@ -125,7 +119,6 @@ const rawStories: StoryType[] = [
   title: "Ziggy: The Community Star",
   date: "Dec 15, 2024",
   preview: "Ziggy greets every single person—and every single dog.",
-  image: "/src/assets/ziggy-star.jpg",
   content: `
     Ziggy is the unofficial ambassador of the dog community.
     He loves welcoming new members and encouraging shy pups to play.

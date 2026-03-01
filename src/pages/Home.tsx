@@ -39,7 +39,7 @@ export default function Home() {
             to={`/story/${story.id}`}
             className={styles.storyCard}
             >
-            {story.image && (
+            {story && (
                 <img
                 src={story.image || dtlbLogo}
                 alt={story.title}

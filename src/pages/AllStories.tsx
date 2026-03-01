@@ -11,7 +11,7 @@ export default function AllStories() {
       <div className={styles.grid}>
         {STORIES.map((story) => (
           <Link key={story.id} to={`/story/${story.id}`} className={styles.card}>
-            {story.image && 
+            {story && 
             <img
                 src={story.image || dtlbLogo}
                 alt={story.title}
