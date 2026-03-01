@@ -1,0 +1,279 @@
+.container {
+  padding-top: 0;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+.fullPageSection {
+  width: 100%;
+  min-height: 100vh;     /* full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  padding: 4rem 2rem;       /* keeps nice spacing on large screens */
+  box-sizing: border-box;
+  overflow: visible !important;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+
+  scroll-snap-align: start;   /* SNAP TO THIS SECTION */
+}
+
+.sectionDark {
+  background: #1b1b1b;
+  color: white;
+}
+
+.sectionBlue {
+  background: #A4D0F4;
+}
+
+.sectionLight {
+  background: #ffffff;
+}
+
+.hero {
+  width: 100%;
+  padding: 4rem 1.5rem 2rem;
+  padding-top: 70px; /* never change this unless navbar height changes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background: linear-gradient(180deg, #ffffff, #f4f4f4);
+}
+
+.heroContent {
+  max-width: 850px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1B3B5A;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.ctaRow {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CTA BUTTONS */
+.ctaPrimary {
+  background: #F59E0B;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ctaSecondary {
+  background: #1B3B5A;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ctaOutline {
+  border: 2px solid #1B3B5A;
+  color: #1B3B5A;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  background: white;
+  text-decoration: none;
+}
+
+/* DOG COLLAGE */
+.heroDogs {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.heroDogs img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ===============================
+   CONTENT SECTIONS
+================================= */
+.section,
+.sectionAlt {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.sectionAlt {
+  background: #A4D0F4; /* soft sky blue */
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1B3B5A;
+}
+
+.sectionText {
+  color: #333;
+  max-width: 600px;
+  margin: 0.5rem auto 2rem;
+}
+
+.bullets {
+  text-align: left;
+  max-width: 700px;
+  margin: 1rem auto 2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.learnMore {
+  display: inline-block;
+  color: #1B3B5A;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+/* STORIES PREVIEW */
+.storyPreview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto 0 auto;
+}
+
+/* Each card */
+.storyCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-decoration: none;
+  color: #1B3B5A;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+  border: 2px solid transparent;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.storyCard:hover {
+  transform: translateY(-4px);
+  border-color: #A4D0F4;
+}
+
+/* Image wrapper */
+.previewImg {
+  width: 100%;
+  height: 160px;         /* FIXED HEIGHT */
+  object-fit: cover;     /* CRITICAL */
+  object-position: center;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Title */
+.storyCard h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Preview text */
+.storyCard p {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0;
+  flex-grow: 1;         /* makes CTA stick to bottom */
+}
+
+/* CTA */
+.cardCTA {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1B3B5A;
+}
+
+/* EVENTS SECTION */
+/* EVENTS PREVIEW SECTION */
+.eventsPreviewSection {
+  padding: 4rem 2rem;
+  background: #e79017;
+  text-align: center;
+  color: #fff;
+}
+
+.eventsPreview {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.eventCard {
+  background: #ffffff;
+  color: #1b3b5a;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.eventCard:hover {
+  transform: translateY(-4px);
+}
+
+.eventsPreviewSection .date {
+  color: #e79017;
+  font-weight: 600;
+}
+
+.addToCalBtn {
+  background: #1B3B5A;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+.addToCalBtn:hover {
+  background: #163049;
+}

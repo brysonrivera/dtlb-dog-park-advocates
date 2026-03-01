@@ -1,0 +1,34 @@
+.container {
+  padding-top: 80px; /* adjust if your navbar height changes */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.storyList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.storyCard {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.storyCard:hover {
+  transform: translateY(-3px);
+}
+
+.storyImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.storyTitle {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}

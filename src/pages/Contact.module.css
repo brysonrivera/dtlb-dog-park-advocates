@@ -1,0 +1,285 @@
+/* ===============================
+   PAGE WRAPPER
+================================*/
+.container {
+  background: #1b1b1b; /* dark backdrop */
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main heading */
+.heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1B3B5A;         /* brand blue */
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Intro text under heading */
+.intro {
+  max-width: 760px;
+  text-align: center;
+  color: #e2e2e2;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+/* ===============================
+   TWO-CARD LAYOUT
+================================*/
+.layout {
+  width: 100%;
+  max-width: 1350px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.25fr);
+  gap: 2.5rem;
+}
+
+/* Shared card styles */
+.mapSection,
+.formSection {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+/* Card headings */
+.subheading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1B3B5A;
+  margin-bottom: 0.75rem;
+}
+
+/* ===============================
+   MAP CARD
+================================*/
+.mapText {
+  color: #555;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.mapImage {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.75rem;
+}
+
+.mapHint {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* ===============================
+   FORM CARD
+================================*/
+.formSection form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* "Select all" row */
+.selectAllRow {
+  padding: 0.75rem 0.9rem;
+  margin: 0.25rem -0.9rem 1rem -0.9rem;
+  border-radius: 10px;
+  background: #f5f7fb;
+  border: 1px solid #e0e4f0;
+}
+
+.selectAllRow label {
+  font-weight: 600;
+  color: #1B3B5A;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Representatives list */
+.repsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.75rem;
+  max-height: 340px;
+  overflow: auto;
+}
+
+/* Individual row */
+.repOption {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.55rem 0.25rem;
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+}
+
+.repOption:last-child {
+  border-bottom: none;
+}
+
+.repOption input[type="checkbox"] {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+}
+
+.repLabel {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.45;
+}
+
+.repEmail {
+  font-size: 0.85rem;
+  color: #777;
+  white-space: nowrap;
+}
+
+/* ===============================
+   MESSAGE FORM FIELDS
+================================*/
+.fieldGroup {
+  margin-bottom: 1.25rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #1B3B5A;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  margin-top: 0.35rem;
+  border-radius: 8px;
+  border: 1px solid #d2d7e3;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.98rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #1B3B5A;
+  box-shadow: 0 0 0 2px rgba(27, 59, 90, 0.12);
+}
+
+.textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* Helper text under textarea */
+.helper {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.25rem;
+}
+
+/* ===============================
+   SUBMIT BUTTON
+================================*/
+.submitButton {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  background: #1B3B5A;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 2.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease,
+    box-shadow 0.15s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #16324b;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.submitButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ===============================
+   RESPONSIVE
+================================*/
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mapSection,
+  .formSection {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .repsGrid {
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 3.25rem 1rem 2.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 0.98rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .mapSection,
+  .formSection {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .repOption {
+    grid-template-columns: auto minmax(0, 1fr);
+    row-gap: 0.2rem;
+  }
+
+  .repEmail {
+    grid-column: 2 / -1;
+  }
+
+  .submitButton {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

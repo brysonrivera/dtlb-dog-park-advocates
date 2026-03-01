@@ -1,0 +1,71 @@
+.page {
+  background: #A4D0F4;
+  min-height: 100vh;
+  padding: 6rem 1.5rem 3rem; /* pushes content below navbar */
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1B3B5A;
+  margin-bottom: 2rem;
+}
+
+/* Create Button (unchanged except color contrast improved) */
+.createWrapper {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1100px;
+  margin: 0 auto 1rem auto;
+}
+
+.createButton {
+  background: #1B3B5A;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.createButton:hover {
+  background: #16304a;
+}
+
+/* Event Cards */
+.list {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  color: #1B3B5A;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.date {
+  color: #e79017;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}

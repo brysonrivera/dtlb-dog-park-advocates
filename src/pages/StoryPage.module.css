@@ -1,0 +1,105 @@
+.page {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.storyImage {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.body {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.pageWrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f7fb; /* soft pastel blue-gray */
+  padding-top: 100px; /* space for navbar */
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.storyContainer {
+  background: #ffffff;
+  width: min(900px, 92%);
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  position: relative;
+  border-top: 6px solid #F59E0B; /* orange brand stripe */
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1B3B5A; /* deep navy */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.coverImage {
+  width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem 0 2rem;
+  object-fit: cover;
+  max-height: 420px;
+}
+
+.date {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280; /* soft gray */
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  font-size: 1.2rem;
+  line-height: 1.75;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: #1B3B5A;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.backLink:hover {
+  border-bottom: 2px solid #1B3B5A;
+}
+
+.heroWrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #eee; /* placeholder so no jump occurs */
+}
+
+.heroImage {
+  width: 100%;
+  height: 350px; /* keeps layout stable */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+

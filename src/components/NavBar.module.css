@@ -1,0 +1,169 @@
+/* ===============================
+   NAVBAR BASE
+================================*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 4px solid #F59E0B; /* orange brand bar */
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  height: 64px;
+}
+
+/* LOGO */
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* NAV ITEMS (DESKTOP) */
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navItem {
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navItem a,
+.navItem span {
+  text-decoration: none;
+  color: #333;
+  padding: 0.3rem;
+}
+
+.navItem a:hover,
+.navItem span:hover {
+  color: #1B3B5A;
+}
+
+/* DROPDOWNS (DESKTOP) */
+
+/* Dropdown container */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  z-index: 999999;
+
+  /* THIS IS THE FIX */
+  white-space: normal !important;
+  width: max-content;
+  max-width: 260px;
+
+  left: auto;
+  right: 0;               /* anchor to the right edge of the nav item */
+}
+
+/* Dropdown link text */
+.dropdown a {
+  display: block;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: #1b3b5a;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  /* allow multi-line text */
+  white-space: normal !important;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.dropdown a:hover {
+  background-color: #f7f7f7;
+}
+
+
+
+/* ===============================
+   MOBILE TOGGLE (HAMBURGER)
+================================*/
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.mobileToggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #1B3B5A;
+  margin: 4px 0;
+  border-radius: 999px;
+}
+
+/* MOBILE MENU WRAPPER */
+.mobileMenu {
+  display: none;
+}
+
+/* ===============================
+   RESPONSIVE BEHAVIOR
+================================*/
+@media (max-width: 850px) {
+  /* hide desktop nav, show hamburger */
+  .navItems {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    padding: 1.5rem 1.25rem 2rem;
+    gap: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 999;
+  }
+
+  .mobileMenu a {
+    text-decoration: none;
+    color: #1B3B5A;
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .mobileSectionLabel {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #888;
+  }
+}
