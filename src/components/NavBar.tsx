@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
+import dtlbLogo from "./../assets/logo-dtlb.png"
 
 export default function NavBar() {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
@@ -23,7 +24,7 @@ export default function NavBar() {
         <div className={styles.logoSection}>
           <Link to="/" onClick={closeAll}>
             <img
-              src="../../src/assets/logo-dtlb.png"
+              src={dtlbLogo}
               alt="DTLB Dog Park Now Logo"
               className={styles.logo}
             />

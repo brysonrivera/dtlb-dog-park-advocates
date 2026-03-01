@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "./DogCarousel.module.css";
+import doggieP from "./../assets/doggie-pictures.jpg";
+import dogParkParty from './../assets/dog-park-party.jpg'
+import kikoRain from './../assets/kiko-rain.jpg'
+import blackjack from './../assets/blackjack.jpg'
 
 type CarouselImage = {
   src: string;
@@ -8,10 +12,10 @@ type CarouselImage = {
 };
 
 const IMAGES: CarouselImage[] = [
-  { src: "/../../src/assets/doggie-pictures.JPG", alt: "Picture of dogs from Cesar Chavez Dog Community"},
-  { src: "/../../src/assets/dog-park-party.JPG", alt: "End of summer party in Cesar Chavez Dog Community"},
-  { src: "/../../src/assets/kiko-rain.JPG", alt: "Picture of cool boston terrier in the rain"},
-  { src: "/../../src/assets/blackjack.JPG", alt: "Portrait picture of BlackJack"},
+  { src: doggieP, alt: "Picture of dogs from Cesar Chavez Dog Community"},
+  { src: dogParkParty, alt: "End of summer party in Cesar Chavez Dog Community"},
+  { src: kikoRain, alt: "Picture of cool boston terrier in the rain"},
+  { src: blackjack, alt: "Portrait picture of BlackJack"},
 ];
 
 const ROTATE_MS = 5000;
