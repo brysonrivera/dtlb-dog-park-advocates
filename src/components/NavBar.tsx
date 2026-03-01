@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
-import dtlbLogo from "./../assets/logo-dtlb.png"
+import dtlbLogo from "../assets/logo-dtlb.png"
 
 export default function NavBar() {
   const [openMenu, setOpenMenu] = useState<string | null>(null);

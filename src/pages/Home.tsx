@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { EVENTS } from "../data/events";
 import { STORIES } from "../data/stories";
 import DogCarousel from "../../src/components/DogCarousel";
+import dtlbLogo from "../assets/logo-dtlb.png";
 
 export default function Home() {
   return (
@@ -40,11 +41,11 @@ export default function Home() {
             >
             {story.image && (
                 <img
-                src={story.image || "../src/assets/logo-dtlb.png"}
+                src={story.image || dtlbLogo}
                 alt={story.title}
                 className={styles.previewImg}
                 onError={(e) => {
-                    (e.target as HTMLImageElement).src = "../src/assets/logo-dtlb.png";
+                    (e.target as HTMLImageElement).src = dtlbLogo;
                 }}
                 />
             )}

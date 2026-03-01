@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "./DogCarousel.module.css";
-import doggieP from "./../assets/doggie-pictures.jpg";
-import dogParkParty from './../assets/dog-park-party.jpg'
-import kikoRain from './../assets/kiko-rain.jpg'
-import blackjack from './../assets/blackjack.jpg'
+import doggieP from "../assets/doggie-pictures.jpg";
+import dogParkParty from '../assets/dog-park-party.jpg'
+import kikoRain from '../assets/kiko-rain.jpg'
+import blackjack from '../assets/blackjack.jpg'
 
 type CarouselImage = {
   src: string;

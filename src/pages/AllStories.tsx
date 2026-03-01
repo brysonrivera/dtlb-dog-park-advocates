@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { STORIES } from "../data/stories";
 import styles from "./AllStories.module.css";
+import dtlbLogo from "../assets/logo-dtlb.png"
 
 export default function AllStories() {
   return (
@@ -12,11 +13,11 @@ export default function AllStories() {
           <Link key={story.id} to={`/story/${story.id}`} className={styles.card}>
             {story.image && 
             <img
-                src={story.image || "../src/assets/logo-dtlb.png"}
+                src={story.image || dtlbLogo}
                 alt={story.title}
                 className={styles.img}
                 onError={(e) => {
-                    (e.target as HTMLImageElement).src = "../src/assets/logo-dtlb.png";
+                    (e.target as HTMLImageElement).src = dtlbLogo;
                 }}
             />
             }

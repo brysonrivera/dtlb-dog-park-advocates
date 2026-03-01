@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { STORIES } from "../data/stories";
 import styles from "./StoryPage.module.css";
+import dtlbLogo from "../assets/logo-dtlb.png";
 
 export default function StoryPage() {
   const { id } = useParams();
@@ -19,12 +20,12 @@ export default function StoryPage() {
                 alt={story.title}
                 className={styles.coverImage}
                 onError={(e) => {
-                (e.target as HTMLImageElement).src = "../src/assets/logo-dtlb.png";
+                (e.target as HTMLImageElement).src = dtlbLogo;
                 }}
             />
             ) : (
             <img
-                src="../src/assets/logo-dtlb.png"
+                src={dtlbLogo}
                 alt="default story"
                 className={styles.coverImage}
             />
